@@ -1,1 +1,1 @@
-# MyJavaCalender
+# MyDailySchedule
