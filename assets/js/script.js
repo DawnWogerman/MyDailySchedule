@@ -1,8 +1,35 @@
-let now = moment().format("dddd, MMM Do YYYY, h:mm a");
+let now = moment().format("dddd, MMM Do YYYY");
 let hourNow = parseInt(moment().format("h"));
+let time = moment().format("h:mm a");
 
 //Display current date/time in header
 $("#currentDay").text(now);
+$(".currentTime").text(time);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 let hourArr = [9,10,11,12,1,2,3,4,5];
 
