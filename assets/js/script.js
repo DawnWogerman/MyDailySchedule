@@ -11,15 +11,13 @@ $(".currentTime").text(time);
 console.log(hourNow);
 
 
-//match id's from textarea/task fields to current time and set classes
+//set class id's to format each row by comparing id's to current time
 $(".hourdiv").each(function(){
     let hourDiv = $(this).attr("id");
-   // console.log(hourDiv);
-   //console.log("hournow" + hourNow);
 
-   if(hourNow == hourDiv){
+    if(hourNow == hourDiv){
        $(this).addClass("present");
-       
+       console.log(hourDiv);
    }
    else if(hourNow < hourDiv){
        $(this).removeClass("present");
@@ -30,6 +28,8 @@ $(".hourdiv").each(function(){
        $(this).addClass("past");
    }
 });
+
+
 
 //save tasks and set to local storage
 $(".saveBtn").click(function(event){
