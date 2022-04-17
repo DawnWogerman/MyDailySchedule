@@ -34,7 +34,7 @@ $(".hourdiv").each(function(){
 //save tasks and set to local storage
 $(".saveBtn").click(function(event){
     event.preventDefault();
-    let task = $(this).
+    let task = $(this).siblings(".hour").val();
     console.log(task);
 })
 
